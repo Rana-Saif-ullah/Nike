@@ -1,0 +1,133 @@
+/* google fonts (Jost) */
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* universal css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost';
+    text-decoration: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* selection */
+
+::selection{
+    color: #fff;
+    background-color: #C8815f;
+}
+
+.nav__bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 6vw;
+}
+
+.logo{
+    color: #111;
+    font-size: 36px;
+    font-weight: 600;
+
+    >span{
+        color: #C8815f;
+    }
+}
+
+.nav__links{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.link{
+    color: #111;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    transition: .3s color;
+}
+
+.link:hover{
+    color: #C8815f;
+}
+
+.nav__icons{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav__icons i{
+    color: #111;
+    font-size: 24px;
+    transition: .3s color;
+    cursor: pointer;
+}
+
+.nav__icons i:hover{
+    color: #C8815f;
+}
+
+.hero__section{
+    padding: 30px 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* for small screens so that the section will not be very close */
+    gap: 20px;
+    min-height: 85vh;
+}
+
+.hero__content{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.sub__title{
+    color: #111;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.title{
+    color: #111;
+    font-size: 56px;
+    font-weight: 900;
+    text-transform: uppercase;
+    max-width: 500px;
+}
+
+.btn{
+    padding: 12px 32px;
+    gap: 8px;
+    color: #111;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 4px;
+    border: 1px solid #111;
+    transition: .3s;
+}
+
+.btn:hover{
+    color: #fff;
+    background-color: #111;
+}
+
+
+.hero__img{
+    max-width: 800px;
+    >img{
+        width: 100%;
+    }
+}
